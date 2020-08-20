@@ -1,45 +1,32 @@
-td {
-    text-align: center;
-}
-
-/*
-.gris {
+caption{
     background-color: lightgray;
 }
 
-.bleu {
-    background-color: lightblue;
-}
-
-.vert {
-    background-color: lightgreen;
-}
-*/
-table, th, td {
+table, caption, th, td {
     border: 1px solid black;
     border-collapse: collapse;
     padding: 5px;
+    text-align: center;
 }
 
+thead th{
+    background-color: white;
+}
 
-
-
-
+tbody th {
+    background-color: lightgray;
+}
 tr:nth-child(even){
+    background-color: lightgreen;
+}
+
+tbody tr:nth-child(odd){
     background-color: lightblue;
 }
 
-tr:nth-child(odd){
-    background-color: lightgreen;
-}
-thead tr th {
-    background-color: lightgrey;
-}
 
 tr:first-child{
     background-color: white;
 }
 
-tfoot:last-child {
-    background-color: white;
-}
+
